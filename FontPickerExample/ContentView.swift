@@ -6,11 +6,22 @@
 //
 
 import SwiftUI
+import FontPicker
+
 
 struct ContentView: View {
+    @State private var font: NSFont = NSFont.systemFont(ofSize: 24)
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Spacer()
+            FontPicker("Font", selection: $font)
+                .padding()
+            Spacer()
+            Text("selected font name \(font.displayName ?? "non" )")
+            Text("font size: \(font.pointSize, specifier: "%.0f")")
+            Spacer()
+        }
+        .padding()
     }
 }
 
