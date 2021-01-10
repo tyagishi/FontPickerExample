@@ -1,6 +1,7 @@
-# FontPicker
+# example project for FontPicker
 
-Wrapped NSFontPanel for SwiftUI.
+FontPicker is Wrapped NSFontPanel for SwiftUI.
+This is an example project for FontPicker.
 
 ## UI 
  
