@@ -17,7 +17,7 @@ struct ContentView: View {
             FontPicker("Font", selection: $font)
                 .padding()
             Spacer()
-            Text("selected font name \(font.displayName ?? "non" )")
+            Text("selected font name \(font.displayName ?? "no font" )")
             Text("font size: \(font.pointSize, specifier: "%.0f")")
             Spacer()
         }
